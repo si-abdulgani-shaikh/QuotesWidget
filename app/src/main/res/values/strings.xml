@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CustomWidgetPoc</string>
+    <string name="app_name">Quotes Widget App</string>
     <string name="previous">Previous</string>
     <string name="next">Next</string>
     <string name="default_quote">The best way out is always through.</string>

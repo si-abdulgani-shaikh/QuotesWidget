@@ -32,13 +32,6 @@ class WidgetQuoteFetchWorker @AssistedInject constructor(
         sharedPreferences.edit().putString(SharePrefConst.QUOTE_KEY, quote).apply()
     }
 
-//    private fun notifyWidgetUpdate() {
-//        val intent = Intent(applicationContext, QuoteWidgetProvider::class.java).apply {
-//            action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
-//        }
-//        applicationContext.sendBroadcast(intent)
-//    }
-
     override suspend fun doWork(): Result {
         return try {
             saveQuoteToPreferences("Loading...")
